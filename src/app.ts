@@ -1,7 +1,7 @@
-import express, { Express } from 'express';
+import express, { Application } from 'express';
 import routes from './routes/index.js';
 
-const app: Express = express();
+const app: Application = express();
 const port: number = 3000;
 
 app.use('/', routes);
