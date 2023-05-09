@@ -1,7 +1,9 @@
 import { Router, Request, Response } from 'express';
 
+// Create the router
 const router: Router = Router();
 
+// Routes
 router.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
 });
@@ -24,4 +26,5 @@ router.get('/hello/world', (req: Request, res: Response) => {
     .end();
 });
 
+// Export the router
 export default router;
